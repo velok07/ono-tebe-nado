@@ -277,6 +277,7 @@
 .about__logo-image {
   width: 148px;
   height: 114px;
+  margin: 63px 46px;
 }
 
 .column__one {
@@ -299,9 +300,6 @@
   height: 240px;
   background-color: #000;
   border-radius: 120px;
-}
-.about__logo-image {
-  margin: 63px 46px;
 }
 
 .about__title {
