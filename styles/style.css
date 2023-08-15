@@ -1,26 +1,15 @@
-.address {
-  margin: 0;
-  padding: 0;
-}
-
-.bet-button {
-  margin: 0;
-  border: 0;
-  padding: 0;
-}
 
 .header {
-  width: 1340px;
-  height: 109px;
+  max-width: 1340px;
   margin-top: 92px;
-  margin-left: 51px;
-  margin-right: 49px;
-  margin-bottom: 92px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 96px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #000;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -29,7 +18,8 @@
 
 .header-menu {
   display: flex;
-  order: -1;
+  flex: 0 0 auto;
+  width: 388px;
 }
 
 .header-menu-list {
@@ -43,12 +33,19 @@
   text-decoration: none;
   list-style: none;
 }
-.header_logo {
-  margin-right: 155px;
-  flex: 0 0 auto;
-  width: 148px;
-  height: 105px;
-}
+.header__logo {
+    flex: 0 0 auto;
+    width: 148px;
+    height: 105px;
+    margin-left: 209px;
+    margin-right: 355px;
+    padding-bottom: 4px;
+  }
+  
+.header__logo-image {
+    width: inherit;
+    height: inherit;
+  }
 
 .address {
   display: block;
@@ -62,98 +59,93 @@
   display: block;
 }
 
+.header__address{
+    max-width: 240px;
+    display: flex;    
+    
+}
+
+
 .cover {
-  width: 1440px;
-  height: 757px;
-  justify-content: space-between;
-  align-items: center;
-  background-image: url("/images/cover.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.text-cover {
-  color: #fff;
-  font-family: Raleway;
-  font-size: 100px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 115%; /* 115px */
-  letter-spacing: 30px;
-  text-transform: uppercase;
-  display: block;
-}
-
-.text-left {
-  padding-top: 165px;
-  padding-left: 50px;
-}
-
-.letter-o {
-  margin-left: 30px;
-}
-
-.text-center {
-  margin-top: 20px;
-  text-align: center;
-  line-height: 100%; /* 100px */
-  width: 1280px;
-  padding-left: 25px;
-  margin-left: 50px;
-  margin-right: 110px;
-}
-
-.letter-e {
-  margin-left: 30px;
-}
-
-.text-right {
-  padding-top: 20px;
-  margin-right: 20px;
-
-  text-align: end;
-  line-height: 100%; /* 100px */
-}
-
-.letter-n {
-  margin-right: 30px;
-}
+    max-width: 1440px;
+    background-image: url("/images/cover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    color: #fff;
+  }
+  
+.cover__title {
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
 .cover__description {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  gap: 78px;
-}
-.bottom-text {
-  color: #fff;
-  text-align: center;
-  font-family: Raleway;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
-  text-transform: uppercase;
-  margin-top: 147px;
-  word-spacing: 18px;
-}
+    margin-top: 120px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  
+.cover__description-text {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 127.273%;
+    text-align: end;
+    word-spacing: 17.5px;
+    text-transform: uppercase;
+    margin-right: 6%;
+  }
 
+  
+.overlay {
+    height: inherit;
+    padding: 165px 50px 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+.aligned-text_left {
+    text-align: left;
+  }
+  
+.aligned-text_center {
+    width: 100%;
+    max-width: 1310px;
+    text-align: center;
+  }
+  
+.aligned-text_right {
+    text-align: right;
+  }
+
+  
+.letter-spacing-extended {
+    letter-spacing: 60px;
+  }
+  
+
+  
+.no-letter-spacing {
+    letter-spacing: 0;
+  }
+
+  
 .bet-button {
-  color: #fff;
-  text-align: center;
-  font-family: Raleway;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-transform: uppercase;
-  background: transparent;
-  width: 257px;
-  height: 52px;
-  border: 1px solid #fff;
-  margin-top: 135px;
-  margin-right: 50px;
-}
-
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 0;
+    color: #fff;
+    padding: 12px 32px;
+  }
+  
 .lots {
   height: 579;
   margin-top: 180px;
@@ -172,11 +164,19 @@
 
 .lots-title {
   padding-left: 40px;
+  color: #000;
+  font-family: Raleway;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 .lots__card-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   flex-grow: 1;
   gap: 25px;
   margin-top: 27px;
@@ -188,12 +188,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.overlay {
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .overlay-cards {
@@ -267,8 +261,9 @@
 .about {
   margin-top: 180px;
   margin-left: 50px;
-  width: 1340px;
-  height: 487px;
+  max-width: 1340px;
+  width: 100%;
+  min-height: 487px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 25px;
@@ -280,15 +275,15 @@
   margin: 63px 46px;
 }
 
-.column__one {
-  width: 430px;
+.column__logo {
+  max-width: 430px;
   display: flex;
   justify-content: center;
   align-items: start;
 }
 
-.column__two {
-  width: 885px;
+.column__text {
+  max-width: 885px;
   height: 388px;
   display: flex;
   flex-direction: column;
@@ -299,8 +294,9 @@
   width: 240px;
   height: 240px;
   background-color: #000;
-  border-radius: 120px;
+  border-radius: 50%;
 }
+
 
 .about__title {
   margin-top: 100px;
@@ -329,8 +325,8 @@
 }
 
 .footer {
-  width: 1340px;
-  height: 97px;
+  max-width: 1340px;
+  min-height: 97px;
   margin-top: 180px;
   margin-left: 50px;
   margin-bottom: 90px;
@@ -350,8 +346,7 @@
   display: flex;
   list-style: none;
   gap: 45px;
-  width: 240px;
-  height: 48px;
+
 }
 
 .footer__social-icon {
@@ -364,4 +359,9 @@
   justify-content: center;
   align-items: center;
   list-style: none;
+  line-height: normal;
+}
+
+.footer-address{
+    max-width: 240px;
 }
